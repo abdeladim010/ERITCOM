@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ERITCOM 2050</title>
+  <meta name="description" content="Future Streetwear from Morocco — Where Tech Meets Tradition" />
+  <!-- Tailwind CDN for quick preview -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles to match neon glow */
+    .neon-text { text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 30px #00f3ff; }
+    .neon-shadow { box-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff; }
+    .pulse-bg { animation: pulse 3s infinite; }
+    @keyframes pulse {
+      0% { opacity: .25; }
+      50% { opacity: .5; }
+      100% { opacity: .25; }
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans min-h-screen">
+
+  <!-- Animated Background -->
+  <div class="fixed inset-0 -z-10 opacity-30">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-black to-blue-900/20 pulse-bg"></div>
+  </div>
+
+  <!-- Floating Instagram Icon -->
+  <a href="https://www.instagram.com/eritcom.erma/" target="_blank" rel="noopener noreferrer"
+     class="fixed right-6 bottom-6 z-50 bg-gradient-to-br from-blue-400 to-blue-600 p-3 rounded-full shadow-[0_0_20px_rgba(0,243,255,0.6)] hover:shadow-[0_0_30px_rgba(0,243,255,0.8)] transition-all duration-300 animate-bounce">
+    <!-- Instagram SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+      <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <path d="M17.5 6.5h.01"></path>
+    </svg>
+  </a>
+
+  <!-- Navigation -->
+  <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+    <div class="text-2xl font-bold tracking-wider neon-text">ERITCOM</div>
+
+    <div id="nav-links" class="hidden md:flex space-x-8">
+      <a href="#" class="hover:text-blue-400 transition">Home</a>
+      <a href="#shop" class="hover:text-blue-400 transition">Shop</a>
+      <a href="#about" class="hover:text-blue-400 transition">About</a>
+      <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden" aria-label="menu">
+      <!-- Menu SVG -->
+      <svg xmlns="" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile nav (hidden by default) -->
+  <div id="mobile-nav" class="md:hidden hidden container mx-auto px-6 pb-4">
+    <div class="flex flex-col space-y-2">
+      <a href="#" class="block py-2">Home</a>
+      <a href="#shop" class="block py-2">Shop</a>
+      <a href="#about" class="block py-2">About</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-6 py-20 text-center">
+    <div class="mx-auto w-64 h-64 mb-10 relative">
+      <div class="center-image">
+    <img src="kid-goku-dbz-4k-qyh5hvg9mzsbekpi.jpg" alt="Eritcom Cyber Scorpion" class="w-full h-full object-contain" style="filter: drop-shadow(0 0 15px #00f3ff);" onerror="this.style.opacity=.35">
+    </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-wider neon-text">ERITCOM 2050</h1>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12">Future Streetwear from Morocco — Where Tech Meets Tradition</p>
+    <a href="#shop" class="bg-transparent border border-blue-400 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-900/30 transition duration-300 inline-block neon-shadow">
+      EXPLORE COLLECTION
+    </a>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center tracking-wider neon-text">CYBER HOODIES</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Product 1 -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_25px_-5px_rgba(0,243,255,0.3)]">
+        <div class="relative overflow-hidden h-80 cursor-pointer group product-images" data-images='["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20251013_153638-ZYi0Td6xeuj928fnmdFtXPhOL7CaqT.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20251013_153121-sx2uQSLWu6b2q4bNt3Eq03sBhgv7vx.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20251013_153639-ClXtkXrk7yFA7o8fH6p4Gw1zTGeY5N.jpg"]'>
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20251013_153638-ZYi0Td6xeuj928fnmdFtXPhOL7CaqT.jpg" alt="ERITCOM WHITE HOODIE" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
+          <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold py-1 px-3 rounded-full neon-shadow">99 DH</div>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 image-dots"></div>
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <p class="text-white text-sm font-medium">click</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">ERITCOM WHITE HOODIE</h3>
+          <p class="text-gray-400 mb-4">Premium Future Fabric</p>
+ <button 
+  class="w-full bg-transparent border border-blue-400 text-white py-2 rounded hover:bg-blue-900/30 transition neon-shadow"
+  onclick="window.open('https://wa.me/212710243718?text=Salam!%20Bghit%20nchri%20had%20lproduit.', '_blank')">
+  ADD TO CART
+</button>
+
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_25px_-5px_rgba(0,243,255,0.3)]">
+        <div class="relative overflow-hidden h-80 cursor-pointer group product-images" data-images='["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170014-sK6vD9MvGECPYb1ptDDDj3ST6v82mO.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170047-LVjhjCyEsS6YK6KOTXbKLwiLcmegLB.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170046-dATuWhS8TrmHpxGKnmBHYVPJuJ92Uj.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170016_1-tOtcNyubpNQu50nGXuMVYNQqVDAsYW.jpg"]'>
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170014-sK6vD9MvGECPYb1ptDDDj3ST6v82mO.jpg" alt="ERITCOM BLUE HOODIE" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
+          <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold py-1 px-3 rounded-full neon-shadow">99 DH</div>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 image-dots"></div>
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <p class="text-white text-sm font-medium">click</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">ERITCOM BLUE HOODIE</h3>
+          <p class="text-gray-400 mb-4">Neon-Accented Design</p>
+         <button 
+  class="w-full bg-transparent border border-blue-400 text-white py-2 rounded hover:bg-blue-900/30 transition neon-shadow"
+  onclick="window.open('https://wa.me/212710243718?text=Salam!%20Bghit%20nchri%20had%20lproduit.', '_blank')">
+  ADD TO CART
+</button>
+      </div>
+          </div>
+
+      <!-- Product 3 - Limited -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_25px_-5px_rgba(0,243,255,0.3)]">
+        <div class="relative overflow-hidden h-80 cursor-pointer group product-images" data-images='["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170014-sK6vD9MvGECPYb1ptDDDj3ST6v82mO.jpg","https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170047-LVjhjCyEsS6YK6KOTXbKLwiLcmegLB.jpg"]'>
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20250929_170014-sK6vD9MvGECPYb1ptDDDj3ST6v82mO.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
+          <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold py-1 px-3 rounded-full neon-shadow animate-pulse">99 DH</div>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 image-dots"></div>
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <p class="text-white text-sm font-medium">click</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">LIMITED EDITION</h3>
+          <p class="text-gray-400 mb-4">Cyber Scorpion Print</p>
+          <button 
+  class="w-full bg-transparent border border-blue-400 text-white py-2 rounded hover:bg-blue-900/30 transition neon-shadow"
+  onclick="window.open('https://wa.me/212710243718?text=Salam!%20Bghit%20nchri%20had%20lproduit.', '_blank')">
+  ADD TO CART
+</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-6 py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 tracking-wider neon-text">THE ERITCOM VISION</h2>
+      <p class="text-lg leading-relaxed mb-10">
+        Born in the streets of Morocco, Eritcom represents the fusion of traditional craftsmanship and futuristic
+        design. Our 2050 collection pushes boundaries with tech-infused fabrics and cyber-inspired aesthetics,
+        creating streetwear that's both timeless and ahead of its time.
+      </p>
+
+      <div class="flex justify-center space-x-6">
+        <div class="text-center">
+          <div class="text-4xl font-bold mb-2 neon-text">99 DH</div>
+          <p class="text-gray-400">Premium Quality</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold mb-2 neon-text">2050</div>
+          <p class="text-gray-400">Future Forward</p>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold mb-2 neon-text">100%</div>
+          <p class="text-gray-400">Moroccan Spirit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-6 py-20">
+  <div class="max-w-2xl mx-auto bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-blue-400 neon-shadow">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center tracking-wider neon-text">JOIN OUR FUTURE</h2>
+
+    <!-- ✅ FORM TO SEND INFO TO WHATSAPP -->
+    <form class="space-y-6" onsubmit="sendToWhatsApp(event)">
+      <div>
+        <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+        <input id="name" type="text" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" required />
+      </div>
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+        <input id="email" type="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" required />
+      </div>
+      <div>
+        <label for="message" class="block mb-2 text-sm font-medium">Your Message</label>
+        <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..." required></textarea>
+      </div>
+      <button type="submit" class="w-full bg-transparent border border-blue-400 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-900/30 transition duration-300 neon-shadow">
+        SEND MESSAGE
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ✅ JAVASCRIPT -->
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault(); // باش ما يعاودش تحميل الصفحة
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill in all fields before sending.");
+    return;
+  }
+
+  const phoneNumber = "212710243718"; // رقمك بدون 0
+
+  // نص الرسالة
+  const text = `📩 New Message from Website\n\n👤 Name: ${name}\n📧 Email: ${email}\n💬 Message: ${message}`;
+
+  // نفتح الواتساب
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+
+      <div class="mt-10 text-center">
+        <p class="mb-4">Or connect with us on social media</p>
+        <a href="https://www.instagram.com/eritcom.erma/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-gradient-to-br from-blue-400 to-blue-600 px-6 py-2 rounded-full hover:shadow-lg transition-all">
+          <!-- small instagram svg -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <path d="M17.5 6.5h.01"></path>
+          </svg>
+          <span>Follow @eritcom.erma</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container mx-auto px-6 py-10 border-t border-gray-800 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="text-xl font-bold mb-4 md:mb-0 neon-text">ERITCOM 2050</div>
+      <div class="text-gray-400 text-sm">© 2023 Eritcom. All rights reserved. Future Streetwear from Morocco.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts: image cycling + mobile menu -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+
+    // Product image cycling logic
+    document.querySelectorAll('.product-images').forEach(container => {
+      const images = JSON.parse(container.getAttribute('data-images') || '[]');
+      let index = 0;
+      const imgEl = container.querySelector('.current-image');
+      const dotsContainer = container.querySelector('.image-dots');
+
+      // create dots
+      images.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-blue-400 w-4' : 'bg-gray-400');
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsContainer.children);
+
+      container.addEventListener('click', () => {
+        index = (index + 1) % images.length;
+        imgEl.src = images[index];
+        // update dots
+        dots.forEach((d, i) => {
+          if (i === index) {
+            d.classList.remove('bg-gray-400'); d.classList.add('bg-blue-400'); d.style.width = '1rem';
+          } else {
+            d.classList.remove('bg-blue-400'); d.classList.add('bg-gray-400'); d.style.width = '0.5rem';
+          }
+        });
+      });
+
+      // handle image load error gracefully
+      imgEl.addEventListener('error', () => { imgEl.style.opacity = .4; });
+    });
+  </script>
+</body>
+</html>
