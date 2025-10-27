@@ -144,8 +144,49 @@
 
       </div>
           </div>
+  <!-- Product 3 -->
+      <div class="bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_25px_-5px_rgba(0,243,255,0.3)]">
+       <div class="relative group w-full h-full">
+  <img src="IMG_20251021_173302.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
+  <img src="IMG_20251021_173310.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:scale-105" />
+  <img src="IMG_20251021_173313.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:scale-105" />
+  <img src="IMG_20251021_173329.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:scale-105" />
+  <img src="IMG_20251021_173401.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:scale-105" />
 
-      <!-- Product 3 - Limited -->
+  <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold py-1 px-3 rounded-full neon-shadow animate-pulse">99 DH</div>
+</div>
+
+<script>
+  const images = document.querySelectorAll('.current-image, .group img:not(.current-image)');
+  let index = 0;
+
+  setInterval(() => {
+    images.forEach((img, i) => {
+      img.style.opacity = (i === index) ? '1' : '0';
+    });
+    index = (index + 1) % images.length;
+  }, 3000); // تبدل كل 3 ثواني
+</script>
+ss="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
+          <div class="absolute top-4 right-4 bg-blue-500 text-white font-bold py-1 px-3 rounded-full neon-shadow">99 DH</div>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 image-dots"></div>
+         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+  <p class="text-white text-sm font-medium">click</p>
+         </div>
+
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">ERITCOM WHITE HOODIE</h3>
+          <p class="text-gray-400 mb-4">Premium Future Fabric</p>
+<button 
+
+  class="w-full bg-transparent border border-green-500 text-white py-2 rounded hover:bg-green-900/30 transition neon-shadow"
+  onclick="window.open('https://wa.me/212710243718?text=' + encodeURIComponent(`سلام! 👋
+بغيت نشري هاد المنتج: ERITCOM WHITE HOODIE 🧥`), '_blank')">
+  ⚫ Order via WhatsApp
+</button>
+
+      <!-- Product 4 - Limited -->
       <div class="bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_25px_-5px_rgba(0,243,255,0.3)]">
         <div class="relative overflow-hidden h-80 cursor-pointer group product-images" data-images='["photo_6016970554738853864_y.jpg","photo_6016970554738853862_y.jpg","photo_6016970554738853863_y.jpg","photo_6016970554738853857_y.jpg"]'>
           <img src="photo_6016970554738853865_y.jpg" alt="LIMITED EDITION" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 current-image" />
